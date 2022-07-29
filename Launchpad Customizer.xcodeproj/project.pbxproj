@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		460C97E8289208BD008B2EB3 /* Launchpad_CustomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C97E7289208BD008B2EB3 /* Launchpad_CustomizerApp.swift */; };
+		460C97E8289208BD008B2EB3 /* LaunchpadCustomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C97E7289208BD008B2EB3 /* LaunchpadCustomizerApp.swift */; };
 		460C97EA289208BD008B2EB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C97E9289208BD008B2EB3 /* ContentView.swift */; };
 		460C97EC289208BE008B2EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460C97EB289208BE008B2EB3 /* Assets.xcassets */; };
 		460C97EF289208BE008B2EB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460C97EE289208BE008B2EB3 /* Preview Assets.xcassets */; };
+		467CD1B528937C0300211BF6 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CD1B428937C0300211BF6 /* Commands.swift */; };
+		467CD1B728937D8800211BF6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CD1B628937D8800211BF6 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		460C97E4289208BD008B2EB3 /* Launchpad Customizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Launchpad Customizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		460C97E7289208BD008B2EB3 /* Launchpad_CustomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad_CustomizerApp.swift; sourceTree = "<group>"; };
+		460C97E7289208BD008B2EB3 /* LaunchpadCustomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadCustomizerApp.swift; sourceTree = "<group>"; };
 		460C97E9289208BD008B2EB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		460C97EB289208BE008B2EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		460C97EE289208BE008B2EB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		460C97F0289208BE008B2EB3 /* Launchpad_Customizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launchpad_Customizer.entitlements; sourceTree = "<group>"; };
+		467CD1B428937C0300211BF6 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		467CD1B628937D8800211BF6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		460C97E6289208BD008B2EB3 /* Launchpad Customizer */ = {
 			isa = PBXGroup;
 			children = (
-				460C97E7289208BD008B2EB3 /* Launchpad_CustomizerApp.swift */,
+				460C97E7289208BD008B2EB3 /* LaunchpadCustomizerApp.swift */,
 				460C97E9289208BD008B2EB3 /* ContentView.swift */,
+				467CD1B628937D8800211BF6 /* WebView.swift */,
+				467CD1B428937C0300211BF6 /* Commands.swift */,
 				460C97EB289208BE008B2EB3 /* Assets.xcassets */,
 				460C97F0289208BE008B2EB3 /* Launchpad_Customizer.entitlements */,
 				460C97ED289208BE008B2EB3 /* Preview Content */,
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				460C97EA289208BD008B2EB3 /* ContentView.swift in Sources */,
-				460C97E8289208BD008B2EB3 /* Launchpad_CustomizerApp.swift in Sources */,
+				467CD1B728937D8800211BF6 /* WebView.swift in Sources */,
+				467CD1B528937C0300211BF6 /* Commands.swift in Sources */,
+				460C97E8289208BD008B2EB3 /* LaunchpadCustomizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -274,13 +282,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewestover.Launchpad-Customizer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewestover.launchpad-customizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,13 +311,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewestover.Launchpad-Customizer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewestover.launchpad-customizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
